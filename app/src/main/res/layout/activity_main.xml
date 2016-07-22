@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bookdrama.MainActivity"
+    android:background="#E1F5FE">
+
+
+    <ImageView
+        android:src="@drawable/images"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:id="@+id/images"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book"
+        android:textColor="#448AFF"
+        android:textSize="40sp"
+        android:paddingTop="16dp"
+        android:id="@+id/book"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Written : 정은궐"
+        android:textSize="25sp"
+        android:id="@+id/written"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/book"
+        android:layout_toRightOf="@+id/images"
+        android:layout_toEndOf="@+id/images" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Issued Date :27/07/2009 "
+        android:textSize="25sp"
+        android:id="@+id/issued"
+        android:layout_below="@+id/written"
+        android:layout_toEndOf="@+id/images"
+        android:layout_marginTop="31dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/drama"
+        android:layout_below="@+id/issued"
+        android:layout_toStartOf="@+id/book"
+        android:layout_alignRight="@+id/images"
+        android:layout_alignEnd="@+id/images"
+        android:id="@+id/imageView" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drama"
+        android:textColor="#448AFF"
+        android:textSize="40sp"
+        android:id="@+id/textView"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/written"
+        android:layout_alignEnd="@+id/written" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Script : 김태희"
+        android:textSize="25sp"
+        android:layout_below="@+id/textView"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_marginTop="26dp"
+        android:id="@+id/textView2" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Airdate : 30/08/2010 ~ 02/11/2010"
+        android:textSize="25sp"
+        android:layout_below="@+id/textView2"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_marginTop="26dp" />
+   
+</RelativeLayout>
